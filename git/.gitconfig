@@ -1,0 +1,22 @@
+[user]
+    email = aleksandr.avferonok@gmail.com
+    name = Alexander Avferonok
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    hist = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    type = cat-file -t
+    dump = cat-file -p
+    undo = checkout --
+    subupdate = submodule update --init --recursive
+[core]
+    editor = vim
+    pager = less -F -X
+[merge]
+    tool = vimdiff
+[diff]
+    tool = vimdiff
+[status]
+    showUntrackedFiles = all
