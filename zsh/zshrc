@@ -83,6 +83,7 @@ plugins=(git
     zsh-autosuggestions
     history-search-multi-word
     pip
+    golang
 )
 
 source $ZSH/oh-my-zsh.sh
