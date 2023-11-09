@@ -1,17 +1,34 @@
-filetype off
 set nocompatible
+filetype off
 
-"call vundle#end()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+
+call vundle#end()
 filetype plugin indent on
 
+Plugin 'tomasiser/vim-code-dark'
+Plugin 'majutsushi/tagbar'
+Plugin 'Shougo/unite.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'godlygeek/tabular'
+Plugin 'joe-skb7/cscope-maps'
+
 " global preferences "
-colorscheme torte
+syntax on
+colorscheme codedark
 set nu
 set t_Co=256
 set mouse=a
 set termencoding=utf-8
 set clipboard=unnamedplus
-" set clipboard=unnamed
 
 " Remember info about open buffers on close
 set viminfo^=%
